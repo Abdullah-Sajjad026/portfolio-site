@@ -4,7 +4,9 @@
   "description": "Abdullah Sajjad's Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev-server": "live-server",
+    "start": "npm-run-all --parallel watch:sass dev-server"
   },
   "author": "Abdullah-webdev",
   "license": "MIT",
