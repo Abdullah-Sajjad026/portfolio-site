@@ -1,0 +1,49 @@
+.footer {
+    border-top: 1px solid var(--color-grey);
+    padding: 7rem 3rem;
+    background-color: var(--color-lightbg);
+    font-size: 1.6rem;
+
+    h3 {
+        text-align: center;
+        color: var(--color-primary-dark);
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    [class^='col'] {
+        align-self: center;
+        justify-items: start;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: all .2s;
+        border-radius: 20px;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow-small-dark);
+        }
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__logo {
+        width: 5rem;
+    }
+
+    .copyright-text {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

@@ -64,15 +64,16 @@
         .progress-bar {
             display: inline-block;
             height: 100%;
+            border-radius: 10px;
 
             &.html-bar {
                 background-color: #FF5722;
-                width: 70%;
+                width: 75%;
             }
 
             &.css-bar {
                 background-color: #2196F3;
-                width: 88%;
+                width: 92%;
             }
 
             &.sass-bar {
@@ -82,7 +83,7 @@
 
             &.git-bar {
                 background-color: #DE4C36;
-                width: 70%;
+                width: 73%;
             }
         }
     }
