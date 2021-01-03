@@ -5,6 +5,7 @@
   --color-dark: #16171a;
   --color-white: #fcf8e8;
   --color-lightbg: #f9f9f9;
+  --color-grey: #cccccc;
   --font-primary: 'Rubik', sans-serif;
   --box-shadow-small: 0px 5px 12px 0px rgba(69, 67, 96, .2); }
 
@@ -26,6 +27,9 @@ body {
 
 img {
   max-width: 100%; }
+
+section {
+  margin: 6rem 0; }
 
 h1,
 h2,
@@ -71,6 +75,9 @@ h6 {
   background-color: #fff;
   box-shadow: var(--box-shadow-small); }
 
+.wrapper {
+  grid-column: center-start / center-end; }
+
 .btn {
   border: 1px solid transparent;
   padding: 1rem 3rem;
@@ -103,7 +110,69 @@ h6 {
       display: block;
       width: 10rem;
       height: 1.75px;
-      background-color: var(--color-primary-light); }
+      background-color: var(--color-primary-light);
+      border-radius: 10px; }
+
+.skills-card {
+  background-color: rgba(22, 23, 26, 0.8);
+  min-height: 10rem;
+  border-radius: 5px;
+  border: 1px solid rgba(204, 204, 204, 0.2);
+  padding: 2rem;
+  color: var(--color-grey); }
+  .skills-card > * {
+    margin-bottom: 2rem; }
+  .skills-card__img-container {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    .skills-card__img-container img {
+      height: 10rem;
+      width: auto; }
+  .skills-card__heading {
+    position: relative;
+    z-index: 2; }
+    .skills-card__heading::after {
+      content: "";
+      display: inline-block;
+      width: 50%;
+      height: 1px;
+      background-color: rgba(204, 204, 204, 0.2);
+      border-radius: 10px;
+      margin-left: 2rem; }
+    .skills-card__heading::before {
+      content: "";
+      display: block;
+      width: 6.2rem;
+      height: 1rem;
+      background-color: rgba(15, 76, 117, 0.8);
+      border-radius: 2px;
+      position: absolute;
+      top: 2.9rem;
+      z-index: -1; }
+  .skills-card .progress-container {
+    position: relative;
+    border: 1px solid rgba(204, 204, 204, 0.2);
+    height: 1.5rem;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px; }
+    .skills-card .progress-container .progress-bar {
+      display: inline-block;
+      height: 100%; }
+      .skills-card .progress-container .progress-bar.html-bar {
+        background-color: #FF5722;
+        width: 70%; }
+      .skills-card .progress-container .progress-bar.css-bar {
+        background-color: #2196F3;
+        width: 88%; }
+      .skills-card .progress-container .progress-bar.sass-bar {
+        background-color: #CD6799;
+        width: 90%; }
+      .skills-card .progress-container .progress-bar.git-bar {
+        background-color: #DE4C36;
+        width: 70%; }
 
 .header {
   padding: 1rem 2rem;
@@ -140,13 +209,21 @@ h6 {
 
 .grid-3col {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center; }
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem; }
   .grid-3col__img-col {
     grid-column: span 1; }
   .grid-3col__content-col {
     grid-column: span 2; }
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+
+.full-bleed-grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 29rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end]; }
 
 .hero {
   background-image: linear-gradient(to right bottom, rgba(22, 23, 26, 0.9), rgba(22, 23, 26, 0.9)), url(../../images/mainbg.jpg);
@@ -157,7 +234,8 @@ h6 {
   justify-content: center;
   align-items: center;
   grid-row: 1/2;
-  grid-column: full-start/ full-end; }
+  grid-column: full-start/ full-end;
+  margin: 0; }
   .hero__content {
     color: var(--color-white);
     text-align: center; }
@@ -189,19 +267,29 @@ h6 {
 
 #about {
   grid-row: 2/3;
-  grid-column: center-start / center-end;
-  margin: 7rem 0; }
+  grid-column: center-start / center-end; }
 
-.about__img-col img {
-  width: 25rem;
-  border-radius: 50%; }
+.about__img-col {
+  place-self: center; }
+  .about__img-col img {
+    width: 38rem;
+    border-radius: 50%; }
 
 .about__text-col {
+  place-self: center;
   font-size: 1.6rem; }
 
 #skills {
   grid-row: 3/4;
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  padding: 13rem 0;
+  background-color: var(--color-dark); }
+  #skills .title-box h2 {
+    color: var(--color-white); }
+
+.skills__img-col img {
+  width: 40rem;
+  height: auto; }
 
 #portfolio {
   grid-row: 4/5;

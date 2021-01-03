@@ -1,0 +1,89 @@
+.skills-card {
+    background-color: rgba($color-dark, .8);
+    min-height: 10rem;
+    border-radius: 5px;
+    border: 1px solid rgba($color-grey, .2);
+    padding: 2rem;
+
+    color: var(--color-grey);
+
+    &>* {
+        margin-bottom: 2rem;
+    }
+
+    &__img-container {
+        // clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        // background-color: var(--color-primary-light);
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            height: 10rem;
+            width: auto;
+        }
+    }
+
+    &__heading {
+        position: relative;
+        z-index: 2;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 50%;
+            height: 1px;
+            background-color: rgba($color-grey, .2);
+            border-radius: 10px;
+            margin-left: 2rem;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 6.2rem;
+            height: 1rem;
+            background-color: rgba($color-primary, .8);
+            border-radius: 2px;
+            position: absolute;
+            top: 2.9rem;
+            z-index: -1;
+        }
+    }
+
+    .progress-container {
+        position: relative;
+        border: 1px solid rgba($color-grey, .2);
+        height: 1.5rem;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 10px;
+
+        .progress-bar {
+            display: inline-block;
+            height: 100%;
+
+            &.html-bar {
+                background-color: #FF5722;
+                width: 70%;
+            }
+
+            &.css-bar {
+                background-color: #2196F3;
+                width: 88%;
+            }
+
+            &.sass-bar {
+                background-color: #CD6799;
+                width: 90%;
+            }
+
+            &.git-bar {
+                background-color: #DE4C36;
+                width: 70%;
+            }
+        }
+    }
+
+}

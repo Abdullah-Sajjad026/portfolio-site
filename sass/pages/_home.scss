@@ -10,6 +10,8 @@
     grid-row: 1/2;
     grid-column: full-start/ full-end;
 
+    margin: 0;
+
     &__content {
         color: var(--color-white);
         text-align: center;
@@ -61,20 +63,22 @@
 #about {
     grid-row: 2/3;
     grid-column: center-start / center-end;
-    margin: 7rem 0;
 }
 
 .about {
     &__content {}
 
     &__img-col {
+        place-self: center;
+
         img {
-            width: 25rem;
+            width: 38rem;
             border-radius: 50%;
         }
     }
 
     &__text-col {
+        place-self: center;
         font-size: 1.6rem;
     }
 }
@@ -82,8 +86,30 @@
 // skills
 #skills {
     grid-row: 3/4;
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
+    padding: 13rem 0;
+    background-color: var(--color-dark);
 
+    .title-box {
+        h2 {
+            color: var(--color-white);
+        }
+    }
+}
+
+.skills {
+
+
+    &__content {}
+
+    &__img-col {
+        img {
+            width: 40rem;
+            height: auto;
+        }
+    }
+
+    &__content-col {}
 }
 
 

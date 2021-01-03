@@ -7,9 +7,8 @@
 
 .grid-3col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
 
     &__img-col {
         grid-column: span 1;
@@ -18,4 +17,15 @@
     &__content-col {
         grid-column: span 2;
     }
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.full-bleed-grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 29rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
 }

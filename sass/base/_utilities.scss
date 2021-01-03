@@ -27,3 +27,7 @@
     background-color: #fff;
     box-shadow: var(--box-shadow-small);
 }
+
+.wrapper {
+    grid-column: center-start / center-end;
+}
