@@ -3,11 +3,13 @@
   --color-primary-light: #009cf9;
   --color-primary-dark: #0f4c75;
   --color-dark: #16171a;
+  --color-darkbg: #292929;
   --color-white: #fcf8e8;
   --color-lightbg: #f9f9f9;
   --color-grey: #cccccc;
   --font-primary: 'Rubik', sans-serif;
-  --box-shadow-small: 0px 5px 12px 0px rgba(69, 67, 96, .2); }
+  --box-shadow-small-dark: 0px 3px 10px 0px rgba(0, 0, 0, .2);
+  --box-shadow-small-light: 0px 3px 10px 0px rgba(69, 67, 96, .2); }
 
 *,
 *::before,
@@ -73,7 +75,7 @@ h6 {
 .card {
   padding: 2rem;
   background-color: #fff;
-  box-shadow: var(--box-shadow-small); }
+  box-shadow: var(--box-shadow-small-dark); }
 
 .wrapper {
   grid-column: center-start / center-end; }
@@ -114,11 +116,12 @@ h6 {
       border-radius: 10px; }
 
 .skills-card {
-  background-color: rgba(22, 23, 26, 0.8);
+  background-color: rgba(38, 38, 38, 0.938);
   min-height: 10rem;
   border-radius: 5px;
   border: 1px solid rgba(204, 204, 204, 0.2);
-  padding: 2rem;
+  padding: 5rem 3rem;
+  box-shadow: var(--box-shadow-small-dark);
   color: var(--color-grey); }
   .skills-card > * {
     margin-bottom: 2rem; }
@@ -174,6 +177,16 @@ h6 {
         background-color: #DE4C36;
         width: 70%; }
 
+.portfolio-card {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: start;
+  align-items: center; }
+  .portfolio-card__img {
+    width: 5rem; }
+  .portfolio-card p {
+    font-size: 1.6rem; }
+
 .header {
   padding: 1rem 2rem;
   background-color: rgba(22, 23, 26, 0.9);
@@ -207,15 +220,6 @@ h6 {
   grid-template-rows: 90vh repeat(3, min-content);
   grid-auto-rows: min-content; }
 
-.grid-3col {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 2rem; }
-  .grid-3col__img-col {
-    grid-column: span 1; }
-  .grid-3col__content-col {
-    grid-column: span 2; }
-
 .grid-2col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -224,6 +228,11 @@ h6 {
 .full-bleed-grid {
   display: grid;
   grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 29rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end]; }
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem; }
 
 .hero {
   background-image: linear-gradient(to right bottom, rgba(22, 23, 26, 0.9), rgba(22, 23, 26, 0.9)), url(../../images/mainbg.jpg);
@@ -271,9 +280,9 @@ h6 {
 
 .about__img-col {
   place-self: center; }
-  .about__img-col img {
-    width: 38rem;
-    border-radius: 50%; }
+  .about__img-col lottie-player {
+    width: 40rem;
+    height: 40rem; }
 
 .about__text-col {
   place-self: center;
@@ -283,9 +292,14 @@ h6 {
   grid-row: 3/4;
   grid-column: full-start / full-end;
   padding: 13rem 0;
-  background-color: var(--color-dark); }
+  background-color: var(--color-darkbg); }
   #skills .title-box h2 {
     color: var(--color-white); }
+
+.skills__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem; }
 
 .skills__img-col img {
   width: 40rem;

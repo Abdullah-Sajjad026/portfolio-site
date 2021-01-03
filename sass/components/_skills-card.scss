@@ -1,10 +1,11 @@
 .skills-card {
-    background-color: rgba($color-dark, .8);
+    background-color: rgba(38, 38, 38, 0.938);
+
     min-height: 10rem;
     border-radius: 5px;
     border: 1px solid rgba($color-grey, .2);
-    padding: 2rem;
-
+    padding: 5rem 3rem;
+    box-shadow: var(--box-shadow-small-dark);
     color: var(--color-grey);
 
     &>* {
