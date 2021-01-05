@@ -110,7 +110,7 @@
 #skills {
     grid-row: 3/4;
     grid-column: full-start / full-end;
-    padding: 13rem 0;
+    padding: 8rem 0;
     background-color: var(--color-darkbg);
 
     .title-box {
@@ -167,5 +167,6 @@
 
     h4 {
         margin-bottom: 2rem;
+        font-weight: 400;
     }
 }
