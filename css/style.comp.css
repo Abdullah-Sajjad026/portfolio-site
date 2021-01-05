@@ -130,11 +130,19 @@ h6 {
 .skills-card {
   background-color: rgba(38, 38, 38, 0.938);
   min-height: 10rem;
-  border-radius: 5px;
+  border-radius: 2rem;
   border: 1px solid rgba(204, 204, 204, 0.2);
-  padding: 5rem 3rem;
+  padding: 4rem 3rem;
   box-shadow: var(--box-shadow-small-dark);
-  color: var(--color-grey); }
+  color: var(--color-grey);
+  width: 80%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 800px) {
+    .skills-card {
+      width: 90%; } }
+  @media only screen and (max-width: 400px) {
+    .skills-card {
+      width: 95%; } }
   .skills-card > * {
     margin-bottom: 2rem; }
   .skills-card__img-container {
@@ -143,19 +151,11 @@ h6 {
     margin-left: auto;
     margin-right: auto; }
     .skills-card__img-container img {
-      height: 10rem;
+      height: 9rem;
       width: auto; }
   .skills-card__heading {
     position: relative;
     z-index: 2; }
-    .skills-card__heading::after {
-      content: "";
-      display: inline-block;
-      width: 50%;
-      height: 1px;
-      background-color: rgba(204, 204, 204, 0.2);
-      border-radius: 10px;
-      margin-left: 2rem; }
     .skills-card__heading::before {
       content: "";
       display: block;
@@ -164,7 +164,7 @@ h6 {
       background-color: rgba(15, 76, 117, 0.8);
       border-radius: 2px;
       position: absolute;
-      top: 2.9rem;
+      top: 2rem;
       z-index: -1; }
   .skills-card .progress-container {
     position: relative;
@@ -179,7 +179,7 @@ h6 {
       border-radius: 10px; }
       .skills-card .progress-container .progress-bar.html-bar {
         background-color: #FF5722;
-        width: 75%; }
+        width: 80%; }
       .skills-card .progress-container .progress-bar.css-bar {
         background-color: #2196F3;
         width: 92%; }
@@ -188,7 +188,7 @@ h6 {
         width: 90%; }
       .skills-card .progress-container .progress-bar.git-bar {
         background-color: #DE4C36;
-        width: 73%; }
+        width: 80%; }
 
 .portfolio-card {
   display: grid;
@@ -235,7 +235,7 @@ h6 {
   justify-content: center;
   align-items: center; }
 
-.navigation__item {
+.navigation__item:not(:last-child) {
   margin-right: 2.2rem; }
 
 .navigation__link {
@@ -258,7 +258,7 @@ h6 {
   .footer h3 {
     text-align: center;
     color: var(--color-primary-dark);
-    font-style: italic;
+    font-weight: 500;
     margin-bottom: 2rem; }
   .footer [class^='col'] {
     align-self: center;
@@ -270,7 +270,7 @@ h6 {
   .footer__link {
     text-decoration: none;
     transition: all .2s;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden; }
     .footer__link:hover {
       transform: translateY(-3px);
@@ -278,7 +278,7 @@ h6 {
     .footer__link:not(:last-child) {
       margin-right: 1rem; }
   .footer__logo {
-    width: 5rem; }
+    width: 4rem; }
   .footer .copyright-text {
     margin-top: 2rem;
     text-align: center; }
@@ -384,7 +384,7 @@ h6 {
 #skills {
   grid-row: 3/4;
   grid-column: full-start / full-end;
-  padding: 13rem 0;
+  padding: 8rem 0;
   background-color: var(--color-darkbg); }
   #skills .title-box h2 {
     color: var(--color-white); }
@@ -412,4 +412,5 @@ h6 {
   #contact .title-box {
     margin-bottom: 2rem; }
   #contact h4 {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-weight: 400; }
