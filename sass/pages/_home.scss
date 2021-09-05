@@ -1,172 +1,169 @@
 .hero {
-    background-image: linear-gradient(to right bottom, rgba($color-dark, .9), rgba($color-dark, .9)), url(../../images/mainbg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-image: linear-gradient(to right bottom, rgba(24, 40, 83, 0.81), rgba(1, 1, 6, 0.85)),
+		url(../../images/mainbg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    grid-row: 1/2;
-    grid-column: full-start/ full-end;
+	grid-row: 1/2;
+	grid-column: full-start/ full-end;
 
-    margin: 0;
+	margin: 0;
 
-    &__content {
-        color: var(--color-white);
-        text-align: center;
+	&__content {
+		color: var(--color-white);
+		text-align: center;
 
-        &>*:not(:last-child) {
-            margin-bottom: 1rem;
-        }
+		& > *:not(:last-child) {
+			margin-bottom: 1rem;
+		}
 
-        h3 {
-            font-weight: 300;
+		h3 {
+			font-weight: 300;
 
-            &::after {
-                content: "";
-                display: inline-block;
-                width: 32rem;
-                height: 1.150px;
-                margin-left: 1rem;
-                background-color: var(--color-primary);
-            }
-        }
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 32rem;
+				height: 1.150px;
+				margin-left: 1rem;
+				background-color: var(--color-primary);
+			}
+		}
 
-        h1 {
+		h1 {
+			@include respond(450px) {
+				font-size: 4.5rem;
+			}
 
-            @include respond(450px) {
-                font-size: 4.5rem;
-            }
+			&::after {
+				content: "";
+				display: block;
+				width: 20rem;
+				height: 2rem;
+				margin-top: -4rem;
+				margin-bottom: 2rem;
+				background-color: rgba($color-primary-light, .4);
 
-            &::after {
-                content: "";
-                display: block;
-                width: 20rem;
-                height: 2rem;
-                margin-top: -4rem;
-                margin-bottom: 2rem;
-                background-color: rgba($color-primary-light, .4);
+				@include respond(450px) {
+					height: 1.3rem;
+					width: 10rem;
+					margin-left: 4.5rem;
+					margin-top: -3rem;
+				}
+			}
+		}
 
-                @include respond(450px) {
-                    height: 1.3rem;
-                    width: 10rem;
-                    margin-left: 4.5rem;
-                    margin-top: -3rem;
-                }
-            }
-        }
+		h4 {
+			font-weight: 400;
+		}
 
-        h4 {
-            font-weight: 400;
-        }
+		.btns {
+			margin-top: 2rem;
 
-        .btns {
-            margin-top: 2rem;
-
-
-            &>*:not(:last-child) {
-                margin-right: 2rem;
-            }
-        }
-    }
+			& > *:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+	}
 }
-
 
 // about
 #about {
-    grid-row: 2/3;
-    grid-column: center-start / center-end;
+	grid-row: 2/3;
+	grid-column: center-start / center-end;
 }
 
 .about {
-    &__content {}
+	&__content {
+	}
 
-    &__img-col {
-        place-self: center;
+	&__img-col {
+		place-self: center;
 
-        // img {
-        //     width: 38rem;
-        //     border-radius: 50%;
-        // }
+		// img {
+		//     width: 38rem;
+		//     border-radius: 50%;
+		// }
 
-        lottie-player {
-            width: 40rem;
-            height: 40rem;
+		lottie-player {
+			width: 40rem;
+			height: 40rem;
 
-            @include respond(360px) {
-                width: 25rem;
-            }
-        }
-    }
+			@include respond(360px) {
+				width: 25rem;
+			}
+		}
+	}
 
-    &__text-col {
-        place-self: center;
-        font-size: 1.6rem;
-    }
+	&__text-col {
+		place-self: center;
+		font-size: 1.6rem;
+	}
 }
 
 // skills
 #skills {
-    grid-row: 3/4;
-    grid-column: full-start / full-end;
-    padding: 8rem 0;
-    background-color: var(--color-darkbg);
+	grid-row: 3/4;
+	grid-column: full-start / full-end;
+	padding: 8rem 0;
+	background-color: var(--color-darkbg);
 
-    .title-box {
-        h2 {
-            color: var(--color-white);
-        }
-    }
+	.title-box {
+		h2 {
+			color: var(--color-white);
+		}
+	}
 }
 
 .skills {
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
 
+		@include respond(600px) {
+			grid-template-columns: 1fr;
+		}
+	}
 
-    &__content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+	&__img-col {
+		img {
+			width: 40rem;
+			height: auto;
+		}
+	}
 
-        @include respond(600px) {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    &__img-col {
-        img {
-            width: 40rem;
-            height: auto;
-        }
-    }
-
-    &__content-col {}
+	&__content-col {
+	}
 }
-
 
 // portfolio
 #portfolio {
-    grid-row: 4/5;
-    grid-column: center-start / center-end;
+	grid-row: 4/5;
+	grid-column: center-start / center-end;
 }
 
 .portfolio {
-
-    &__content {}
+	&__content {
+	}
 }
 
 // contact
 #contact {
-    grid-row: 5/6;
-    grid-column: center-start / center-end;
-    font-size: 1.6rem;
+	grid-row: 5/6;
+	grid-column: center-start / center-end;
+	font-size: 1.6rem;
 
-    .title-box {
-        margin-bottom: 2rem;
-    }
+	.title-box {
+		margin-bottom: 2rem;
+	}
 
-    h4 {
-        margin-bottom: 2rem;
-        font-weight: 400;
-    }
+	h4 {
+		margin-bottom: 2rem;
+		font-weight: 400;
+	}
 }

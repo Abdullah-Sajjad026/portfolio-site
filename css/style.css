@@ -278,32 +278,6 @@ h6 {
 	font-weight: 300;
 }
 
-.header {
-	padding: 1rem 2rem;
-	background-color: rgba(22, 23, 26, 0.9);
-	height: 8vh;
-	font-size: 1.6rem;
-}
-
-.navigation__list {
-	list-style-type: none;
-	display: flex;
-	align-items: center;
-}
-.navigation__item:not(:last-child) {
-	margin-right: 2.2rem;
-}
-.navigation__link {
-	text-decoration: none;
-	color: white;
-	border-bottom: 2px solid transparent;
-	transition: all 0.2s;
-}
-.navigation__link:hover {
-	color: var(--color-primary-light);
-	border-bottom: 2px solid var(--color-primary-dark);
-}
-
 .logo {
 	height: 5rem;
 }
@@ -356,8 +330,8 @@ h6 {
 		repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
 	grid-template-columns: [full-start] minmax(4rem, 1fr) [center-start]
 		repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(4rem, 1fr) [full-end];
-	grid-template-rows: 90vh repeat(3, -webkit-min-content);
-	grid-template-rows: 90vh repeat(3, min-content);
+	grid-template-rows: 100vh repeat(3, -webkit-min-content);
+	grid-template-rows: 100vh repeat(3, min-content);
 	grid-auto-rows: -webkit-min-content;
 	grid-auto-rows: min-content;
 }
@@ -407,7 +381,7 @@ h6 {
 }
 
 .hero {
-	background-image: linear-gradient(to right bottom, rgba(22, 23, 26, 0.9), rgba(22, 23, 26, 0.9)),
+	background-image: linear-gradient(to right bottom, rgba(24, 40, 83, 0.81), rgba(1, 1, 6, 0.85)),
 		url(../../images/mainbg.jpg);
 	background-size: cover;
 	background-position: center;
