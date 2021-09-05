@@ -288,7 +288,6 @@ h6 {
 .navigation__list {
 	list-style-type: none;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 }
 .navigation__item:not(:last-child) {
