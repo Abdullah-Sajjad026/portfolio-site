@@ -101,14 +101,15 @@
 
 	&__text-col {
 		place-self: center;
-		font-size: 2rem;
+		font-size: 1.9rem;
+		font-weight: 300;
 		& > .card {
-			letter-spacing: .008rem;
+			letter-spacing: .007rem;
 			border-radius: 1rem;
 			min-height: 20rem;
 			display: flex;
 			align-items: center;
-			min-height: 30rem;
+			min-height: 28rem;
 		}
 	}
 }
@@ -117,7 +118,7 @@
 #skills {
 	grid-row: 3/4;
 	grid-column: full-start / full-end;
-	padding: 6rem 0 8rem 0;
+	padding: 5.5rem 0 8rem 0;
 	background-color: var(--color-darkbg);
 
 	.title-box {

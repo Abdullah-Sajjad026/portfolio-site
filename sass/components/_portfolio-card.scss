@@ -1,46 +1,46 @@
 .portfolio-card {
-    display: grid;
-    gap: 1.5rem;
-    justify-items: start;
-    align-items: center;
-    border-radius: 10px;
+	display: grid;
+	gap: 1.5rem;
+	justify-items: start;
+	align-items: center;
+	border-radius: 10px;
 
-    transition: all .2s;
+	transition: all .2s;
 
-    &:first-child {
-        background: linear-gradient(to right, #8e2de2, #4a00e0);
-        color: white;
-    }
+	&:first-child {
+		background: linear-gradient(to right, #8e2de2, #4a00e0);
+		color: white;
+	}
 
-    &:hover {
-        background: linear-gradient(to right, #8e2de2, #4a00e0);
-        color: white;
-        transform: translateY(-5px);
-        box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, .6);
-    }
+	&:hover {
+		background: linear-gradient(to right, #8e2de2, #4a00e0);
+		color: white;
+		transform: translateY(-5px);
+		box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, .6);
+	}
 
-    &__img {
-        width: 6rem;
-        height: 6rem;
-    }
+	&__img {
+		width: 6rem;
+		height: 6rem;
+	}
 
-    h4 {
-        z-index: 9;
+	h4 {
+		z-index: 9;
 
-        &::after {
-            content: "";
-            display: block;
-            width: 6rem;
-            height: 1rem;
-            background-color: rgba($color-primary, .5);
-            margin-top: -1.3rem;
-            z-index: -1;
-            border-radius: 2px;
-        }
-    }
+		&::after {
+			content: "";
+			display: block;
+			width: 6rem;
+			height: 1rem;
+			background-color: rgba($color-primary, .5);
+			margin-top: -1.3rem;
+			z-index: -1;
+			border-radius: 2px;
+		}
+	}
 
-    p {
-        font-size: 1.6rem;
-        font-weight: 300;
-    }
+	p {
+		font-size: 1.7rem;
+		font-weight: 300;
+	}
 }
