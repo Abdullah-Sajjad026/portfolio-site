@@ -219,6 +219,7 @@ h6 {
 	align-items: center;
 	border-radius: 10px;
 	transition: all 0.2s;
+	border: 1px solid #d5d3d3;
 }
 
 .portfolio-card:hover {
@@ -226,6 +227,7 @@ h6 {
 	color: white;
 	transform: translateY(-5px);
 	box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.6);
+	border: 1px solid transparent;
 }
 
 .portfolio-card__img {
