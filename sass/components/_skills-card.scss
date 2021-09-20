@@ -1,22 +1,23 @@
 .skills-card {
-	background-color: rgba(38, 38, 38, 0.938);
+	background-color: #1F2937;
 
 	min-height: 10rem;
-	border-radius: 2rem;
+	border-radius: 1.4rem;
 	border: 1px solid rgba($color-grey, .2);
 	padding: 3rem 1rem 1rem 2rem;
 	box-shadow: var(--box-shadow-small-dark);
 	color: var(--color-grey);
 
-	width: 80%;
-	margin: 0 auto;
+	// width: 80%;
+	// margin: 0 auto;
 
-	@include respond(800px) {
-		width: 90%;
-	}
-	@include respond(400px) {
-		width: 95%;
-	}
+	// @include respond(800px) {
+	// 	width: 90%;
+	// }
+
+	// @include respond(400px) {
+	// 	width: 95%;
+	// }
 
 	&__img-container {
 		// clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
@@ -37,6 +38,7 @@
 		position: relative;
 		z-index: 2;
 		margin-top: 2rem;
+		font-size: 1.9rem;
 
 		// &::after {
 		//     content: "";
@@ -51,8 +53,8 @@
 		&::before {
 			content: "";
 			display: block;
-			width: 6.2rem;
-			height: 1rem;
+			width: 6.4rem;
+			height: 1.3rem;
 			background-color: rgba($color-primary, .8);
 			border-radius: 2px;
 			position: absolute;
@@ -61,38 +63,38 @@
 		}
 	}
 
-	.progress-container {
-		position: relative;
-		border: 1px solid rgba($color-grey, .2);
-		height: 1.5rem;
-		overflow: hidden;
-		width: 100%;
-		border-radius: 10px;
+	// .progress-container {
+	// 	position: relative;
+	// 	border: 1px solid rgba($color-grey, .2);
+	// 	height: 1.5rem;
+	// 	overflow: hidden;
+	// 	width: 100%;
+	// 	border-radius: 10px;
 
-		.progress-bar {
-			display: inline-block;
-			height: 100%;
-			border-radius: 10px;
+	// 	.progress-bar {
+	// 		display: inline-block;
+	// 		height: 100%;
+	// 		border-radius: 10px;
 
-			&.html-bar {
-				background-color: #ff5722;
-				width: 80%;
-			}
+	// 		&.html-bar {
+	// 			background-color: #ff5722;
+	// 			width: 80%;
+	// 		}
 
-			&.css-bar {
-				background-color: #2196f3;
-				width: 92%;
-			}
+	// 		&.css-bar {
+	// 			background-color: #2196f3;
+	// 			width: 92%;
+	// 		}
 
-			&.sass-bar {
-				background-color: #cd6799;
-				width: 90%;
-			}
+	// 		&.sass-bar {
+	// 			background-color: #cd6799;
+	// 			width: 90%;
+	// 		}
 
-			&.git-bar {
-				background-color: #de4c36;
-				width: 80%;
-			}
-		}
-	}
+	// 		&.git-bar {
+	// 			background-color: #de4c36;
+	// 			width: 80%;
+	// 		}
+	// 	}
+	// }
 }
