@@ -76,7 +76,8 @@ h6 {
 }
 
 .heading-4 {
-	font-size: 2.1rem;
+	font-size: 2.2rem;
+	font-weight: 500;
 }
 
 .heading-5 {
@@ -109,8 +110,9 @@ h6 {
 
 .card {
 	padding: 2rem;
-	background-color: #fff;
+	background-color: #dddddd;
 	box-shadow: var(--box-shadow-small-dark);
+	color: var(--color-dark);
 }
 
 .wrapper {
@@ -200,66 +202,52 @@ h6 {
 	font-size: 1.9rem;
 }
 
-.skills-card__heading::before {
-	content: "";
-	display: block;
-	width: 6.4rem;
-	height: 1.3rem;
-	background-color: rgba(15, 76, 117, 0.8);
-	border-radius: 2px;
-	position: absolute;
-	top: 2rem;
-	z-index: -1;
-}
-
 .portfolio-card {
 	display: grid;
 	gap: 1.5rem;
 	justify-items: start;
-	align-items: center;
+	align-items: last baseline;
 	border-radius: 10px;
-	transition: all 0.2s;
 	border: 1px solid #d5d3d3;
+	transition: all 0.15s;
 }
 
 .portfolio-card:hover {
 	background: linear-gradient(to right, #8e2de2, #4a00e0);
-	color: white;
 	transform: translateY(-5px);
 	box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.6);
-	border: 1px solid transparent;
+	border: transparent;
+}
+
+.portfolio-card:hover h4,
+.portfolio-card:hover p {
+	color: white;
 }
 
 .portfolio-card__img {
 	border-radius: 0.7rem;
+	min-height: 158px;
 }
 
 .portfolio-card hr {
 	display: block;
 	width: 100%;
-	height: 1px;
-	color: rgba(0, 0, 0, 0.178);
-	border-radius: 1rem;
+	height: 0.4rem;
+	background-color: white;
+	border: none;
+	border-radius: 2rem;
+	margin-top: 0.5rem;
 }
 
 .portfolio-card h4 {
-	z-index: 9;
-}
-
-.portfolio-card h4::after {
-	content: "";
-	display: block;
-	width: 6rem;
-	height: 1rem;
-	background-color: rgba(15, 76, 117, 0.5);
-	margin-top: -1.3rem;
-	z-index: -1;
-	border-radius: 2px;
+	color: var(--color-primary-dark);
+	transition: all 0.15s;
 }
 
 .portfolio-card p {
 	font-size: 1.8rem;
 	font-weight: 300;
+	transition: all 0.15s;
 }
 
 .logo {

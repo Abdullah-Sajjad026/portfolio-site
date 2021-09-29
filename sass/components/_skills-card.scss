@@ -50,17 +50,17 @@
 		//     margin-left: 2rem;
 		// }
 
-		&::before {
-			content: "";
-			display: block;
-			width: 6.4rem;
-			height: 1.3rem;
-			background-color: rgba($color-primary, .8);
-			border-radius: 2px;
-			position: absolute;
-			top: 2rem;
-			z-index: -1;
-		}
+		// &::before {
+		// 	content: "";
+		// 	display: block;
+		// 	width: 6.4rem;
+		// 	height: 1.3rem;
+		// 	background-color: rgba($color-primary, .8);
+		// 	border-radius: 2px;
+		// 	position: absolute;
+		// 	top: 2rem;
+		// 	z-index: -1;
+		// }
 	}
 
 	// .progress-container {
