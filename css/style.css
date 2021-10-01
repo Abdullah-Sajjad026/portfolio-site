@@ -206,7 +206,7 @@ h6 {
 	display: grid;
 	gap: 1.5rem;
 	justify-items: start;
-	align-items: last baseline;
+	align-items: end;
 	border-radius: 10px;
 	border: 1px solid #d5d3d3;
 	transition: all 0.15s;
