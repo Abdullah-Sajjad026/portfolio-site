@@ -358,7 +358,7 @@ h6 {
 }
 
 .hero {
-	background-image: linear-gradient(to right bottom, rgba(24, 40, 83, 0.81), rgba(1, 1, 6, 0.85)), url(../../images/mainbg.jpg);
+	background-image: linear-gradient(to right bottom, rgba(23, 33, 66, 0.81), rgba(0, 0, 0, 0.85)), url(../../images/mainbg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
