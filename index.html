@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- ----  primary font -->
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="sass/main.css"> -->
 </head>
@@ -62,7 +62,7 @@
             <div class="title-box">
                 <h2 class="heading-2">A little bit about me</h2>
             </div>
-            <div class="about__content grid-2col">
+            <div class="about__content grid-2col" data-aos="zoom-out">
 
                 <div class="about__text-col">
                     <div class="card">
@@ -91,7 +91,7 @@
                     <h2 class="heading-2">My Skills</h2>
                 </div>
 
-                <div class="skills__content">
+                <div class="skills__content" data-aos="zoom-in">
 
                     <div class="skills-card">
                         <div class="skills-card__img-container">
@@ -139,7 +139,7 @@
                 <h2 class="heading-2">My Recent Works</h2>
             </div>
 
-            <div class="portfolio__content grid-3col">
+            <div class="portfolio__content grid-3col" data-aos="fade-up">
 
                 <div class="portfolio-card card">
                     <img src="images/resourcesmark-ss.png" alt="Website Logo" class="portfolio-card__img">
@@ -343,6 +343,14 @@
 
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            once: false,
+            duration: 800
+        });
+    </script>
 </body>
 
 </html>
