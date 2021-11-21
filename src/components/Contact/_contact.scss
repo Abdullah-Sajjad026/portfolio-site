@@ -1,0 +1,14 @@
+// contact
+#contact {
+    grid-column: center-start / center-end;
+    font-size: 1.6rem;
+
+    .title-box {
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+}

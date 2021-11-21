@@ -1,0 +1,44 @@
+// skills
+#skills {
+    grid-column: full-start / full-end;
+    background-color: #374151;
+    margin-top: 0;
+
+    .title-box {
+        h2 {
+            color: var(--color-white);
+        }
+    }
+}
+
+.skills {
+    padding: 5.5rem 4rem 8rem 4rem;
+
+    .wrapper {
+        max-width: 116rem;
+        margin: 0 auto;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.6rem;
+
+        @include respond(950px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond(600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__img-col {
+        img {
+            width: 40rem;
+            height: auto;
+        }
+    }
+
+    &__content-col {}
+}
