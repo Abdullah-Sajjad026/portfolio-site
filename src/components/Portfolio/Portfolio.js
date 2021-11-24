@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import ProjectCard from '../ProjectCard/ProjectCard';
-import projectsdata from '../../projectsData';
+import bigProjectsData from '../../bigProjectsData';
+import smallProjectsData from '../../smallProjectsData';
 
 const Portfolio = () => {
 
-    const [projects, setProjects] = useState(projectsdata.map((project) => {
-        return <ProjectCard img={project.img} title={project.title} description={project.description} link={project.link} />
-    }))
-    const showMore = () => {
+    const bigProjectsCards = bigProjectsData.map(project => (<ProjectCard img={project.img} title={project.title} description={project.description} link={project.link} key={project.title} />));
+    const smallProjectsCards = smallProjectsData.map(project => (<ProjectCard img={project.img} title={project.title} description={project.description} link={project.link} key={project.title} />));
+    const allProjectsCards = [...bigProjectsCards, ...smallProjectsCards]
 
+    const [projects, setProjects] = useState(bigProjectsCards);
+
+    const showMore = (e) => {
+        setProjects(allProjectsCards);
+        e.target.style.display = 'none';
     }
     return (
         <section id="portfolio" className='portfolio'>
