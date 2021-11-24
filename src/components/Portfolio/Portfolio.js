@@ -22,7 +22,7 @@ const Portfolio = () => {
                 <h2 className="heading-2">My Recent Works</h2>
             </div>
 
-            <div className="portfolio__content grid-3col">
+            <div className="portfolio__content grid-3col" data-aos='fade-up'>
                 {projects}
             </div>
             <div className='morebtn-wrapper'>
