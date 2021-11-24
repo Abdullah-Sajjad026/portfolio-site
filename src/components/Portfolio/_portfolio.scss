@@ -4,5 +4,17 @@
 }
 
 .portfolio {
-    &__content {}
+    .morebtn-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loadmore-btn {
+        margin-top: 7rem;
+        background-color: #0e95f0;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        font-family: inherit;
+    }
 }

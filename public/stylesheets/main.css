@@ -357,6 +357,19 @@ h6 {
   grid-column: center-start/center-end;
 }
 
+.portfolio .morebtn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .loadmore-btn {
+  margin-top: 7rem;
+  background-color: #0e95f0;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 #contact {
   grid-column: center-start/center-end;
   font-size: 1.6rem;
