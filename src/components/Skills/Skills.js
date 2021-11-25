@@ -13,9 +13,10 @@ const Skills = () => {
                 <div className="skills__content" data-aos="zoom-out-up">
                     <SkillCard img='html5.svg' skillName='HTML5' />
                     <SkillCard img='css3.svg' skillName='CSS3' />
-                    <SkillCard img='js.svg' skillName='JavaScript' />
-                    <SkillCard img='bootstrap.svg' skillName='Bootstrap' />
                     <SkillCard img='sass.svg' skillName='SASS/SCSS' />
+                    <SkillCard img='bootstrap.svg' skillName='Bootstrap' />
+                    <SkillCard img='js.svg' skillName='JavaScript' />
+                    <SkillCard img='react.svg' skillName='ReactJS' />
                     <SkillCard img='git.svg' skillName='Git/Github' />
                 </div>
             </div>
