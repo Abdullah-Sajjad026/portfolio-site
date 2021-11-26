@@ -22,11 +22,11 @@ const Portfolio = () => {
                 <h2 className="heading-2">My Recent Works</h2>
             </div>
 
-            <div className="portfolio__content grid-3col" data-aos='fade-up'>
+            <div className="portfolio__content" data-aos='fade-up'>
                 {projects}
             </div>
             <div className='morebtn-wrapper'>
-                <button className='loadmore-btn btn' onClick={showMore}>See More</button>
+                <button className='loadmore-btn btn' onClick={showMore}>Show Mini Projects</button>
             </div>
         </section>
     )
