@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "compile-sass": "dart-sass ./src/:public/stylesheets/",
     "watch-sass": "dart-sass --watch ./src/:public/stylesheets/",
     "startDeveloping": "npm-run-all --parallel start watch-sass"
   },
