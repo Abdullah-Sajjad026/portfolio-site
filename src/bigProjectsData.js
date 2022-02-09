@@ -1,5 +1,11 @@
 const bigProjectsData = [
     {
+        title: 'Zomcore.',
+        description: `Zomcore is an ecommerce platform where you can buy premium quality clothes, electrical appliances and much much more.`,
+        img: 'zomcore.png',
+        link: 'https://zomcore.vercel.app/'
+    },
+    {
         title: 'ResourcesMark',
         description: `This website was developed for Front-end Developers where they can find a collection of useful resources for their next project.`,
         img: 'resourcesmark.png',
