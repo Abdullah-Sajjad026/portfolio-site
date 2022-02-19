@@ -4,6 +4,11 @@ const bigProjectsData = [
         description: `Zomcore is an ecommerce platform where you can buy premium quality clothes, electrical appliances and much much more.`,
         img: 'zomcore.png',
         link: 'https://zomcore.vercel.app/'
+    }, {
+        title: 'LOOPS',
+        description: `LOOPS is a software house in RahimYarKhan, Pakistan. This website was developed for LOOPS.`,
+        img: 'loops.png',
+        link: 'http://loops-tech.com/'
     },
     {
         title: 'ResourcesMark',
