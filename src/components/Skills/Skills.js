@@ -15,7 +15,12 @@ const Skills = () => {
           <SkillCard img="bootstrap.svg" skillName="Bootstrap" />
           <SkillCard img="js.svg" skillName="JavaScript" />
           <SkillCard img="react.svg" skillName="ReactJS" />
-          <SkillCard img="nextjs2.svg" skillName="NextJS" />
+          <SkillCard img="nextjs.svg" skillName="NextJS" />
+          <SkillCard img="typescript.svg" skillName="Typescript" />
+          <SkillCard img="redux.svg" skillName="Redux" />
+          <SkillCard img="restapi.png" skillName="APIs Integration" />
+          {/* <SkillCard img="nodejs.svg" skillName="Node JS" />
+          <SkillCard img="expressjs.svg" skillName="Express JS" /> */}
           <SkillCard img="git.svg" skillName="Git/Github" />
         </div>
       </div>
