@@ -1,0 +1,83 @@
+.logo {
+  position: relative;
+  display: inline-block;
+  height: 6rem;
+  width: 8rem;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(24, 40, 83, 0.81),
+      rgba(1, 1, 6, 0.85)
+    ),
+    url("../../public/images/mainbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-row: 1/2;
+  grid-column: full-start/ full-end;
+
+  margin: 0;
+
+  &__content {
+    color: var(--color-white);
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-weight: 300;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 32rem;
+        height: 1.15px;
+        margin-left: 1rem;
+        background-color: var(--color-primary);
+      }
+    }
+
+    h1 {
+      display: inline-block;
+      @include respond(506px) {
+        font-size: 4.5rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 20rem;
+        height: 2rem;
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        background-color: rgba($color-primary-light, 0.4);
+
+        @include respond(506px) {
+          height: 1.3rem;
+          width: 10rem;
+          margin-top: -2.7rem;
+        }
+      }
+    }
+
+    h4 {
+      font-weight: 400;
+    }
+
+    .btns {
+      margin-top: 2rem;
+
+      & > *:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
